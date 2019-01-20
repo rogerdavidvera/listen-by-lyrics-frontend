@@ -9,7 +9,7 @@ export const WelcomePrompt = () => (
     <Jumbotron>
       <div className="welcomeContent">
         <h1 className="title">ListenByLyrics</h1>
-        <p className="subtitle">Search for music by lyrics, and listen to them instantly</p>
+        <p className="subtitle">Search for songs by lyrics, and listen to them instantly</p>
         <hr className="my-2" />
         <p className="login-prompt"></p>
         <p className="lead">
