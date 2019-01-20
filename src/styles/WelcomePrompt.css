@@ -24,10 +24,11 @@ body > #root > div {
   font-size: 14vmin;
   font-weight: 200;
   letter-spacing: .3rem;
+  margin-bottom: 0.5em;
 }
 
 .subtitle {
-    font-size: calc(0.4rem + 3.0vmin);
+    font-size: calc(0.53rem + 3.0vmin);
     font-family: 'Montserrat', sans-serif;
 }
 
