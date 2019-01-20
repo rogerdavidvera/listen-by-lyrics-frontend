@@ -8,7 +8,8 @@ class App extends Component {
   render() {
     return (
       <>
-      <WelcomePrompt/>
+      <Route exact path='/authorized' component={RedirectPage} />
+      <Route exact path='/' component={WelcomePrompt} />
       </>
     );
   }
