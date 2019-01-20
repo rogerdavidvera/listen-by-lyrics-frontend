@@ -1,10 +1,10 @@
 import React from 'react'
 import '../styles/WelcomePrompt.css';
-import {Jumbotron} from 'reactstrap';
-import { LoginButton } from './LoginButton'
+import { Jumbotron } from 'reactstrap';
+import LoginButton from './LoginButton'
 
 
-export const WelcomePrompt = () => (
+const WelcomePrompt = () => (
   <div className="homepage">
     <Jumbotron>
       <div className="welcomeContent">
@@ -19,3 +19,5 @@ export const WelcomePrompt = () => (
     </Jumbotron>
   </div>
 )
+
+export default WelcomePrompt
