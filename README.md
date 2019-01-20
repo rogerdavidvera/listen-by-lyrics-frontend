@@ -1,4 +1,4 @@
-# ListenByLyrics
+# 🎵 ListenByLyrics 🎵
 > Search for songs by lyrics, and listen to them instantly
 
 ## Features ⭐️
