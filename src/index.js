@@ -9,8 +9,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 
 /* Redux Configuration */
-// import { Provider } from 'react-redux'
-// import { store } from './store.js'
+import { Provider } from 'react-redux';
+import store from './store.js';
 
 import * as serviceWorker from './serviceWorker';
 
