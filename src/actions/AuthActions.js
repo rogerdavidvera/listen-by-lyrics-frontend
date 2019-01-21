@@ -10,9 +10,13 @@ export function fetchAuthorization(code) {
     })
     .then(response => response.json())
     .then(data => {
+      console.log(data)
       // Save JWT in local storage, then update auth in store
       localStorage.setItem('jwt', data.jwt)
-      return dispatch({type: UPDATE_AUTHORIZATION, payload: {user:data.user}})
+      return dispatch({
+        type: UPDATE_AUTHORIZATION,
+        payload: {user: data.user}
+      })
     })
   }
 }

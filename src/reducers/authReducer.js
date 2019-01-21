@@ -10,11 +10,13 @@ export default (state = initialState, action) => {
   switch(action.type) {
     // Action has been dispatched to login a user
     case (UPDATE_AUTHORIZATION):
+      // Change state to reflect current user information
       return Object.assign({}, state, {user: action.payload.user, isLoggedIn: true})
     // Action has been dispatched to end current session
     case (LOGOUT_USER):
       // Remove JWT token from local storage
       localStorage.removeItem('jwt')
+      // Change state to a logged out
       return Object.assign({}, state, {
         isLoggedIn: false,
         user: {spotify_id: null, display_name: null, url: null, img_url: null}
