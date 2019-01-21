@@ -1,5 +1,5 @@
 import { createStore, compose, applyMiddleware } from 'redux'
-import rootReducer from './reducers/index'
+import rootReducer from './reducers/rootReducer'
 import thunk from 'redux-thunk'
 
 // When extension is not installed, use Redux's compose
@@ -11,6 +11,6 @@ export function configureStore() {
     rootReducer,
     composeEnhancer(applyMiddleware(thunk))
   )
-}
+};
 
-export const store = configureStore()
+export default configureStore();
