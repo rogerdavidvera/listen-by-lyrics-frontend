@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+// import Startup from './Startup'
 import App from './App';
 
 /* React Router */
@@ -16,9 +18,11 @@ import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
+  <Provider store={store}>
     <Router>
       <Route path='/' component={App} />
-    </Router>,
+    </Router>
+  </Provider>,
   document.getElementById('root')
 );
 
