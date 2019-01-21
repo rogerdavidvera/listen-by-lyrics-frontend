@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import '../styles/WelcomePrompt.css';
 import { Jumbotron } from 'reactstrap';
-import LoginButton from './LoginButton'
-
+import LoginButton from './LoginButton';
+import { connect } from 'react-redux';
 
 const WelcomePrompt = () => (
   <div className="homepage">
