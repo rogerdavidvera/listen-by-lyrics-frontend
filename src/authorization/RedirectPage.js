@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+// import { fetchAuthorization } from '../actions/AuthActions';
 const RedirectPage = () => (<h1>To be continued 😉</h1>)
 
 // class RedirectPage extends Component {
