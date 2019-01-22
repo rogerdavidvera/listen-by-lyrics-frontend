@@ -24,7 +24,7 @@
 
 
 .navbar-collapse {
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center;
