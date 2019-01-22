@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchAuthorization } from '../actions/AuthActions';
-
+// import API_URL from '../assets/ApiUrl'
 class RedirectPage extends Component {
   componentDidMount() {
     // Save query from URL
@@ -12,7 +12,7 @@ class RedirectPage extends Component {
       const code = queryString.split('=')[1]
       // Dispatch action!
       this.props.fetchAuthorization(code)
-      .then(this.props.history.push('/'))
+      .then(this.props.history.replace('/'))
     } else {
       // ELSE, redirect to home page
       this.props.history.push('/')
