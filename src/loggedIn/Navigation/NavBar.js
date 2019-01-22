@@ -31,7 +31,7 @@ class NavBar extends React.Component {
         <Navbar dark expand="md" className="navBar">
           <NavbarBrand className="NavbarBrand" href="/">ListenByLyrics</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+          <Collapse className="capse" isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink className="NavLink" href="#">Search Page</NavLink>

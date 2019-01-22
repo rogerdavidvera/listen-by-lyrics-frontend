@@ -6,13 +6,13 @@
   -moz-animation: Gradient 12s ease infinite;
   animation: Gradient 12s ease infinite;
   box-shadow: 0 .3rem .3rem rgba(0,0,0,.1) !important;
-  /* padding-top: 0rem;
-  padding-bottom: 0rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .NavbarBrand {
   font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
+  font-size: 3em;
   font-weight: 300;
   /* letter-spacing: 1rem; */
 }
@@ -20,4 +20,13 @@
 .NavLink {
     color: rgba(255,255,255,.9) !important;
     font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar-collapse {
+    padding-top: 1rem;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
 }
