@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/AuthActions';
-
+import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -26,12 +26,16 @@ class NavBar extends React.Component {
   render() {
     return (
         <Navbar dark expand="md" className="navBar">
-          <NavbarBrand className="NavbarBrand" href="/">ListenByLyrics</NavbarBrand>
+          <NavbarBrand className="NavbarBrand" href="#">
+            ListenByLyrics
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse className="capse" isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="NavLink" href="#">Search Page</NavLink>
+                <NavLink className="NavLink" href="#">
+                <Link className="NavLink" to="/Search">Search</Link>
+                </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="NavLink" href="#">My Library</NavLink>
