@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 
 import WelcomePrompt from './signedOut/WelcomePrompt'
 import RedirectPage from './authorization/RedirectPage'
+import Dashboard from './loggedIn/Dashboard'
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
       <Route exact path='/authorized' component={RedirectPage} />
       <Route exact path='/' render={(props) => {
         return this.props.auth.isLoggedIn ?
-          <h1>{this.props.auth.user.display_name}</h1>
+          <Dashboard />
           :
           <WelcomePrompt />
         }} />
