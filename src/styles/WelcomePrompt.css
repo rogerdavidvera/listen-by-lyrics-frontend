@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald:200,300,400,500');
 
 body > #root > div {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .homepage {
@@ -12,6 +12,7 @@ body > #root > div {
   -webkit-animation: Gradient 12s ease infinite;
   -moz-animation: Gradient 12s ease infinite;
   animation: Gradient 12s ease infinite;
+  height: 100vh;
 }
 
 .homepageContainer {
