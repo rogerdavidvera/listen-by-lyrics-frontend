@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { logoutUser } from '../../actions/AuthActions';
+
 import {
   Collapse,
   Navbar,
@@ -14,7 +17,7 @@ import {
 
 import '../../styles/NavBar.css';
 
-export default class NavBar extends React.Component {
+class NavBar extends React.Component {
   state = {isOpen: false};
 
   toggle = () => {
@@ -40,7 +43,7 @@ export default class NavBar extends React.Component {
                 <NavLink className="NavLink" href="#">Spotify</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="NavLink" href="#">Sign Out</NavLink>
+                <NavLink className="NavLink" href="#" onClick={this.props.logoutUser}>Sign Out</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -48,3 +51,9 @@ export default class NavBar extends React.Component {
     );
   }
 }
+
+const mapDispatchToProps = {
+  logoutUser
+}
+
+export default connect(null, mapDispatchToProps)(NavBar)
