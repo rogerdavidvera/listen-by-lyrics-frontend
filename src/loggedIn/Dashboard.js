@@ -5,7 +5,6 @@ import LogoutButton from './LogoutButton';
 const Dashboard = ({ user }) => (
   <div className="homepage">
     <h1>{user.display_name}</h1>
-    <img src={user.img_url} alt={user.display_name + 's profile image'}/>
     <br/>
     <br/>
     <LogoutButton />
@@ -17,5 +16,6 @@ const mapStateToProps = (state) => {
     user: state.auth.user
   }
 }
+// <img src={user.img_url} alt={user.display_name + 's profile image'}/>
 
 export default connect(mapStateToProps)(Dashboard)
