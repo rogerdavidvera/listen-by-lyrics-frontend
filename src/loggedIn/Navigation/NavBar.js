@@ -48,18 +48,3 @@ export default class NavBar extends React.Component {
     );
   }
 }
-
-// <UncontrolledDropdown nav inNavbar>
-// <DropdownToggle nav caret>
-// More
-// </DropdownToggle>
-// <DropdownMenu right>
-// <DropdownItem>
-// Official GitHub Repo
-// </DropdownItem>
-// <DropdownItem divider />
-// <DropdownItem>
-// Built with ❤️ by Roger Vera
-// </DropdownItem>
-// </DropdownMenu>
-// </UncontrolledDropdown>
