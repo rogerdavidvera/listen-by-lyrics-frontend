@@ -20,7 +20,6 @@ export default (state = initialState, action) => {
       return Object.assign({}, state, {
         isLoggedIn: false,
         user: {spotify_id: null, display_name: null, url: null, img_url: null},
-        player: {current_song: 'none'}
       })
     default:
       return state
