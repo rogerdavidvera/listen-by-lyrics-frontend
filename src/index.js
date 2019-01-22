@@ -18,14 +18,14 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 
 /* Necessary Components */
-// import Startup from './Startup'
+import Loading from './Loading'
 import App from './App';
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate loading={null} persistor={persistor}>
+    <PersistGate loading={Loading} persistor={persistor}>
       <Router>
         <Route path='/' component={App} />
       </Router>
