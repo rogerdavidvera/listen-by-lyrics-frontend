@@ -23,23 +23,4 @@ export const store = createStore(
 
 // Once store is created, the persistStore function ensures that the redux
 // state is saved to persisted storage whenever it changes
-
 export const persistor = persistStore(store);
-
-// export default () => {
-//   let store = createStore(
-//     persistedReducer,
-//     composeEnhancer(applyMiddleware(thunk))
-//   );
-//   let persistor = persistStore(store)
-//   return { store, persistor }
-// }
-
-// export function configureStore() {
-//   return createStore(
-//     persistedReducer,
-//     composeEnhancer(applyMiddleware(thunk))
-//   )
-// };
-
-// export default configureStore();
