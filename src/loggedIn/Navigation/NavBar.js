@@ -34,7 +34,7 @@ class NavBar extends React.Component {
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink className="NavLink" href="#">
-                <Link className="NavLink" to="/Search">Search</Link>
+                <Link className="NavLink" to="/search">Search</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
