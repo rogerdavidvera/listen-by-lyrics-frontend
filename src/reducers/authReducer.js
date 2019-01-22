@@ -1,5 +1,4 @@
-import { UPDATE_AUTHORIZATION, LOGOUT_USER } from '../assets/ActionTypes'
-
+import { UPDATE_AUTHORIZATION, LOGOUT_USER } from '../assets/ActionTypes';
 const initialState = {
   isLoggedIn: false,
   user: {spotify_id: null, display_name: null, url: null, img_url: null},
