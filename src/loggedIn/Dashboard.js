@@ -1,10 +1,18 @@
 import React from 'react';
+import { connect } from 'react-redux'
 // import LogoutButton from './LogoutButton';
 
-const WelcomePrompt = () => (
+const Dashboard = ({ user }) => (
   <div className="homepage">
-    <h1>Hi</h1>
+    <h1>{user.display_name}</h1>
+    <img src={user.img_url} alt={user.display_name + 's profile image'}/>
   </div>
 )
 
-export default WelcomePrompt
+const mapStateToProps = (state) => {
+  return {
+    user: state.auth.user
+  }
+}
+
+export default connect(mapStateToProps)(Dashboard)
