@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 
 import WelcomePrompt from './signedOut/WelcomePrompt'
 import RedirectPage from './authorization/RedirectPage'
+import Dashboard from './loggedIn/Dashboard'
 
 class App extends Component {
   render() {
