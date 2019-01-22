@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald:200,300,400,500');
 
-body > #root > div {
-  /* height: 100vh; */
+body {
+  background: linear-gradient(-45deg, #e039973b, #d4d4d563, #e039b23b) !important;
+  background-size: 100% 100% !important;
+  /* -webkit-animation: Gradient 12s ease infinite !important;
+  -moz-animation: Gradient 12s ease infinite !important;
+  animation: Gradient 12s ease infinite !important; */
 }
 
 .homepage {
