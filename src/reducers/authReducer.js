@@ -19,7 +19,8 @@ export default (state = initialState, action) => {
       // Change state to a logged out
       return Object.assign({}, state, {
         isLoggedIn: false,
-        user: {spotify_id: null, display_name: null, url: null, img_url: null}
+        user: {spotify_id: null, display_name: null, url: null, img_url: null},
+        player: {current_song: 'none'}
       })
     default:
       return state
