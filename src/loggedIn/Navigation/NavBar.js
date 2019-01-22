@@ -10,10 +10,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+} from 'reactstrap';
 
 import '../../styles/NavBar.css';
 
