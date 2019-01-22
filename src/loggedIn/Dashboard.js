@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import LogoutButton from './LogoutButton';
+
 import NavBar from './navigation/NavBar'
+
 const Dashboard = ({ user }) => (
   <div className="homepage">
     <NavBar/>
@@ -9,7 +10,6 @@ const Dashboard = ({ user }) => (
     <img src={user.img_url} alt={user.display_name + 's profile image'}/>
     <br/>
     <br/>
-    <LogoutButton />
   </div>
 )
 
