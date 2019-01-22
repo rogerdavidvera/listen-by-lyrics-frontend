@@ -25,39 +25,38 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">ListenByLyrics</NavbarBrand>
+        <Navbar dark expand="md" className="navBar">
+          <NavbarBrand className="NavbarBrand" href="/">ListenByLyrics</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#">Search Page</NavLink>
+                <NavLink className="NavLink" href="#">Search Page</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">My Library</NavLink>
+                <NavLink className="NavLink" href="#">My Library</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Spotify</NavLink>
+                <NavLink className="NavLink" href="#">Spotify</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  More
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                  Official GitHub Repo
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                  Built with ❤️ by Roger Vera
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
     );
   }
 }
+
+// <UncontrolledDropdown nav inNavbar>
+// <DropdownToggle nav caret>
+// More
+// </DropdownToggle>
+// <DropdownMenu right>
+// <DropdownItem>
+// Official GitHub Repo
+// </DropdownItem>
+// <DropdownItem divider />
+// <DropdownItem>
+// Built with ❤️ by Roger Vera
+// </DropdownItem>
+// </DropdownMenu>
+// </UncontrolledDropdown>
