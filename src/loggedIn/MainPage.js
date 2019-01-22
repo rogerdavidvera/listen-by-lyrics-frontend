@@ -1,30 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { Container, Row, Col } from 'reactstrap';
+import {
+  Container,
+  Header,
+  Image,
+  Segment,
+  Divider
+} from 'semantic-ui-react'
+import '../styles/MainPage.css';
 
 const MainPage = ({ user }) => (
-  <>
-    <Container>
-    <Row>
-      <Col className="Column">
-      <h1>Hi, {user.display_name}!</h1>
-      <img src={user.img_url} alt={user.display_name + 's profile image'}/>
-      </Col>
-      <Col className="Column">
-      <h1>Hi, {user.display_name}!</h1>
-      <img src={user.img_url} alt={user.display_name + 's profile image'}/>
-      </Col>
-      <Col className="Column">
-      <h1>Hi, {user.display_name}!</h1>
-      <img src={user.img_url} alt={user.display_name + 's profile image'}/>
-      </Col>
-      <Col className="Column">
-      <h1>Hi, {user.display_name}!</h1>
-      <img src={user.img_url} alt={user.display_name + 's profile image'}/>
-      </Col>
-    </Row>
-    </Container>
-  </>
+  <Container text textAlign='center'>
+    <Divider hidden section />
+    <Segment raised className="Segment">
+      <Header content={`Hello, ${user.display_name}!`} className="Header" />
+      <Image src={user.img_url} alt={user.display_name + 's profile image'} rounded centered/>
+      <Divider hidden />
+      <p className="lead">Get Started</p>
+    </Segment>
+  </Container>
 )
 
 const mapStateToProps = (state) => {
