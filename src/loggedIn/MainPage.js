@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const MainPage = ({ user }) => (
   <>
-    <Container className='MainPage'>
+    <Container className='Container'>
       <h1>Hi, {user.display_name}!</h1>
       <img src={user.img_url} alt={user.display_name + 's profile image'}/>
     </Container>
