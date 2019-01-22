@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald:200,300,400,500');
+
+body > #root > div {
+  height: 100vh;
+}
+
+.homepage {
+  text-align: center;
+  color: #eee;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 12s ease infinite;
+  -moz-animation: Gradient 12s ease infinite;
+  animation: Gradient 12s ease infinite;
+}
+
+.homepageContainer {
+  min-height: 100%;
+
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14vmin;
+  font-weight: 200;
+  letter-spacing: .3rem;
+  margin-bottom: 0.5em;
+}
+
+.subtitle {
+    font-size: calc(0.53rem + 3.0vmin);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-prompt {
+  font-size: calc(0.35rem + 3.0vmin);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron {
+  background-color: transparent !important;
+}
+
+.welcomeContent {
+  padding-top: 5%;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
