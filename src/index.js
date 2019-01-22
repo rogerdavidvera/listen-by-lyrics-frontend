@@ -3,25 +3,33 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import Startup from './Startup'
-import App from './App';
+/* Redux Configuration */
+
+// Provides the redux store to rest of the app components
+import { Provider } from 'react-redux';
+// Delays the rendering of the app’s UI until the persisted state
+// has been retrieved and saved to redux.
+import { PersistGate } from 'redux-persist/lib/integration/react';
+//
+import { persistor, store } from './store';
 
 /* React Router */
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 
-/* Redux Configuration */
-import { Provider } from 'react-redux';
-import store from './store.js';
+/* Necessary Components */
+// import Startup from './Startup'
+import App from './App';
 
 import * as serviceWorker from './serviceWorker';
 
-
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
-      <Route path='/' component={App} />
-    </Router>
+    <PersistGate loading={null} persistor={persistor}>
+      <Router>
+        <Route path='/' component={App} />
+      </Router>
+    </PersistGate>
   </Provider>,
   document.getElementById('root')
 );
