@@ -41,7 +41,7 @@ class NavBar extends React.Component {
                 <NavLink className="NavLink" href="#">My Library</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="NavLink" href="#">Spotify</NavLink>
+                <NavLink className="NavLink" href={this.props.spotify_url}>Spotify</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="NavLink" href="#" onClick={this.props.logoutUser}>Sign Out</NavLink>
@@ -53,8 +53,14 @@ class NavBar extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    spotify_url: state.auth.user.url
+  }
+}
+
 const mapDispatchToProps = {
   logoutUser
 }
 
-export default connect(null, mapDispatchToProps)(NavBar)
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar)
