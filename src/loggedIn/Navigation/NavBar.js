@@ -39,6 +39,9 @@ export default class NavBar extends React.Component {
               <NavItem>
                 <NavLink className="NavLink" href="#">Spotify</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink className="NavLink" href="#">Sign Out</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
