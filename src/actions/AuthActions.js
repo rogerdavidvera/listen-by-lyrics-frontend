@@ -20,3 +20,7 @@ export function fetchAuthorization(code) {
     })
   }
 }
+
+export function logoutUser(){
+  return {type: LOGOUT_USER}
+}
