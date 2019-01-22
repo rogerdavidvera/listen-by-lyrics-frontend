@@ -12,6 +12,8 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
+import '../../styles/NavBar.css';
+
 export default class NavBar extends React.Component {
   state = {isOpen: false};
 
