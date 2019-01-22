@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import ApiUrl from '../../assets/ApiUrl'
-import { Container, Grid, Image, Dimmer, Loader, Divider } from 'semantic-ui-react'
+import { Dimmer, Loader, Divider } from 'semantic-ui-react'
 import { connect } from 'react-redux'
+
 import SearchForm from './SearchForm'
+import ResultsContainer from './ResultsContainer'
 
 class SearchPage extends Component {
   state = {query: '', isLoading: false}
 
-  handleSearch = (e, query) => {
-    e.preventDefault()
+  handleSearch = (event, query) => {
+    event.preventDefault()
     if (query === '') {
-      return null
+      return null;
     }
     this.setState({isLoading: true, query: query}, () => {
       fetch(`${ApiUrl}search`, {
@@ -23,38 +25,11 @@ class SearchPage extends Component {
         })
       })
       .then(response => response.json())
-      .then(songs => {
-        this.setState({songs: songs, isLoading: false})
+      .then(data => {
+        this.setState({songs: data.songs, isLoading: false})
       })
     })
   }
-
-  // showSearchResults = () => {
-  //   return (
-  //     <div>
-  //       {this.props.player.current_song ?
-  //           <Grid centered columns={2} divided>
-  //             <Grid.Row>
-  //               <Grid.Column width={6}>
-  //                 <LoggedInSongList data={this.state.songs}/>
-  //               </Grid.Column>
-  //               <Grid.Column width={6}>
-  //                 <LyricsContainer />
-  //               </Grid.Column>
-  //             </Grid.Row>
-  //           </Grid>
-  //         :
-  //         <Grid centered columns={1}>
-  //           <Grid.Row>
-  //             <Grid.Column width={10}>
-  //             <LoggedInSongList data={this.state.songs}/>
-  //             </Grid.Column>
-  //           </Grid.Row>
-  //         </Grid>
-  //       }
-  //     </div>
-  //   )
-  // }
 
   render() {
     return (
@@ -68,8 +43,7 @@ class SearchPage extends Component {
             <Loader size='massive'>Searching for "{this.state.query}"</Loader>
           </Dimmer>
           :
-          <>
-          </>
+          <ResultsContainer songs={this.state.songs} />
         }
       </>
     )
