@@ -3,8 +3,7 @@ import React from 'react';
 
 const WelcomePrompt = () => (
   <div className="homepage">
-    <h1>{this.props.auth.user.display_name}</h1>
-    <btn>Hi</btn>
+    <h1>Hi</h1>
   </div>
 )
 

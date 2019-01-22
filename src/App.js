@@ -13,7 +13,7 @@ class App extends Component {
       <Route exact path='/authorized' component={RedirectPage} />
       <Route exact path='/' render={(props) => {
         return this.props.auth.isLoggedIn ?
-          <h1>{this.props.auth.user.display_name}</h1>
+          <Dashboard />
           :
           <WelcomePrompt />
         }} />
