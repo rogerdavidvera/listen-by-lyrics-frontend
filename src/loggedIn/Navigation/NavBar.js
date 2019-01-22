@@ -13,24 +13,14 @@ import {
   DropdownItem } from 'reactstrap';
 
 export default class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
+  state = {isOpen: false};
 
-    // this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
   toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen
     })
   }
-  // toggle() {
-  //   this.setState({
-  //     isOpen: !this.state.isOpen
-  //   });
-  // }
+
   render() {
     return (
       <div>
@@ -40,25 +30,25 @@ export default class NavBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">My Account</NavLink>
+                <NavLink href="#">Search Page</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <NavLink href="#">My Library</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Spotify</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Options
+                  More
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
+                  Official GitHub Repo
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    Reset
+                  Built with ❤️ by Roger Vera
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
