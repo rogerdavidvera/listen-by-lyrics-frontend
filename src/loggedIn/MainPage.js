@@ -3,10 +3,8 @@ import { connect } from 'react-redux'
 
 const MainPage = ({ user }) => (
   <>
-    <h1>{user.display_name}</h1>
+    <h1>Hi, {user.display_name}!</h1>
     <img src={user.img_url} alt={user.display_name + 's profile image'}/>
-    <br/>
-    <br/>
   </>
 )
 
