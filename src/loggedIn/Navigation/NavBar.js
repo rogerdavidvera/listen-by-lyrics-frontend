@@ -34,14 +34,11 @@ class NavBar extends React.Component {
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink className="NavLink" href="#">
-                <Link className="NavLink" to="/search">Search</Link>
+                <Link className="NavLink" to="/">Search</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="NavLink" href="#">My Library</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="NavLink" href={this.props.spotify_url}>Spotify</NavLink>
+                <NavLink className="NavLink" target="_blank" href={this.props.spotify_url}>Spotify Web Player</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="NavLink" href="#" onClick={this.props.logoutUser}>Sign Out</NavLink>
