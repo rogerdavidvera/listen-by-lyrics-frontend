@@ -1,0 +1,26 @@
+.dimmed.dimmable > .ui.animating.dimmer, .dimmed.dimmable > .ui.visible.dimmer, .ui.active.dimmer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000 !important;
+}
+.ui.modal,
+.ui.active.modal {
+  margin: 0 auto!important;
+  top: auto !important;
+  left: auto !important;
+  transform-origin: center !important;
+  transition: all ease .5s;
+  position:absolute;
+  height: auto;
+}
+
+
+.ui.modal>.header:not(.ui) {
+    text-align: center;
+}
+
+
+.ui[class*="very basic"].table {
+  margin: auto !important
+}

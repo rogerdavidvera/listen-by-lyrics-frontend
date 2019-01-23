@@ -9,7 +9,6 @@ import SongCard from './SongCard'
 
 const renderSongs = (data) => {
   let songs = data || []
-  debugger
   return songs.map(song => {
     return <SongCard song={song} />
   })
