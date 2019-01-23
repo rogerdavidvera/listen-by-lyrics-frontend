@@ -9,20 +9,25 @@ import {
   Divider
 } from 'semantic-ui-react'
 
-const SongCard = ({ song, playSong }) => (
-  <Card fluid>
-    <Image src={song.album_art} />
-    <Card.Content textAlign='center'>
-      <Card.Header>{song.song}</Card.Header>
-      <Card.Meta>{song.artist}</Card.Meta>
-      <Divider />
-      <Card.Content extra>
-      <Icon name="play" color='pink' size="large"/>
-      <Icon name="ellipsis horizontal" color='teal' size="large"/>
-     </Card.Content>
-    </Card.Content>
-  </Card>
-)
+const SongCard = ({ song, playSong }) => {
+  const handlePlay = () => {
+    // console.log(song)
+    playSong(song)
+  }
+  return (
+    <Card fluid>
+      <Image src={song.album_art} onClick={handlePlay} />
+      <Card.Content textAlign='center' onClick={handlePlay}>
+        <Card.Header>{song.song}</Card.Header>
+        <Card.Meta>{song.artist}</Card.Meta>
+      </Card.Content>
+      <Card.Content extra textAlign='center'>
+        <Icon name="play" color='pink' size="large" onClick={handlePlay} />
+        <Icon name="ellipsis horizontal" color='teal' size="large" />
+      </Card.Content>
+    </Card>
+  )
+}
 
 const mapDispatchToProps = {
   playSong
