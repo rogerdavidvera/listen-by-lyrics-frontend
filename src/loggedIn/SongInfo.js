@@ -1,4 +1,4 @@
-import '../../styles/SongInfo.css';
+import '../styles/SongInfo.css';
 import SongInfoHeader from './SongInfoHeader'
 
 import React, { Component } from 'react'

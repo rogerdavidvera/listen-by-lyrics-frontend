@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react'
-import Songs from './Songs'
+import Songs from '../Songs'
 
 
 const ResultsContainer = ({ songs }) => (
