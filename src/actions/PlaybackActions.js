@@ -1,6 +1,6 @@
 import API_URL from '../assets/ApiUrl'
 import HEADERS from '../assets/AuthorizationHeaders'
-import { PLAY_SONG } from './types'
+import { PLAY_SONG } from '../assets/ActionTypes'
 
 export function playSong(song){
   return(dispatch) => {

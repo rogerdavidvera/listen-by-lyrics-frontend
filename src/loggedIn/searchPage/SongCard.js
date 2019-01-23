@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { playSong } from '../../actions/PlaybackActions'
 
 import {
   Card,
@@ -7,7 +9,7 @@ import {
   Divider
 } from 'semantic-ui-react'
 
-const SongCard = ({ song }) => (
+const SongCard = ({ song, playSong }) => (
   <Card fluid>
     <Image src={song.album_art} />
     <Card.Content textAlign='center'>
@@ -22,7 +24,12 @@ const SongCard = ({ song }) => (
   </Card>
 )
 
-export default SongCard
+const mapDispatchToProps = {
+  playSong
+}
+
+export default connect(null, mapDispatchToProps)(SongCard)
+
 
 // Map props to state
 // If current song is a match, display pause
