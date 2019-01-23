@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { playSong } from '../../actions/PlaybackActions'
-
+import SongInfo from './SongInfo'
 import {
   Card,
   Icon,
@@ -22,7 +22,7 @@ const SongCard = ({ song, playSong }) => {
         <Card.Meta>{song.artist}</Card.Meta>
       </Card.Content>
       <Card.Content extra textAlign='center'>
-        <Icon name="ellipsis horizontal" circular color='teal' size="large" />
+        <SongInfo />
       </Card.Content>
     </Card>
   )
