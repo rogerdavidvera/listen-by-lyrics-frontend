@@ -28,8 +28,8 @@ class SongInfo extends Component {
           </Modal.Content>
           <Modal.Actions>
             <Button
-              positive
-              icon='checkmark'
+              negative
+              icon='window close'
               labelPosition='right'
               content="Close"
               onClick={this.close}
