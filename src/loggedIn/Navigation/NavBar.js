@@ -25,7 +25,7 @@ class NavBar extends React.Component {
 
   render() {
     return (
-        <Navbar dark expand="md" className="navBar">
+        <Navbar fixed="top" dark expand="md" className="navBar">
           <NavbarBrand className="NavbarBrand" href="#">
             ListenByLyrics
           </NavbarBrand>
