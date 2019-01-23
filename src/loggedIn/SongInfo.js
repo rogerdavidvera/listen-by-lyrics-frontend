@@ -1,6 +1,6 @@
 import '../styles/SongInfo.css';
 import SongInfoHeader from './SongInfoHeader'
-
+import SongLyrics from './SongLyrics'
 import React, { Component } from 'react'
 import { Button, Header, Image, Modal, Icon, Divider } from 'semantic-ui-react'
 
@@ -17,16 +17,23 @@ class SongInfo extends Component {
       <div>
         <Icon name="ellipsis horizontal" circular color='teal' size="large" onClick={this.show(true)}/>
 
-        <Modal size="small" dimmer={dimmer} open={open} onClose={this.close}>
+        <Modal size="large" dimmer={dimmer} open={open} onClose={this.close}>
           <Modal.Content image scrolling>
             <Image wrapped size='medium' src={this.props.art} />
             <Modal.Description>
               <SongInfoHeader className="SongInfoHeader "name={this.props.name} artist={this.props.artist} album={this.props.album} />
               <Divider />
-              <p>This is an example of expanded content that will cause the modal's dimmer to scroll</p>
+              <SongLyrics lyrics={this.props.lyricsArray} />
             </Modal.Description>
           </Modal.Content>
           <Modal.Actions>
+            <Button
+              onClick={this.props.handlePlay}
+              positive
+              labelPosition='right'
+              icon='play'
+              content='Play'
+              />
             <Button
               negative
               icon='window close'
