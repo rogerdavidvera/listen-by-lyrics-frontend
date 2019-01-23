@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { playSong } from '../../actions/PlaybackActions'
+import { playSong } from '../actions/PlaybackActions'
 import SongInfo from './SongInfo'
 import {
   Card,
