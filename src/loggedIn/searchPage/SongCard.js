@@ -22,8 +22,7 @@ const SongCard = ({ song, playSong }) => {
         <Card.Meta>{song.artist}</Card.Meta>
       </Card.Content>
       <Card.Content extra textAlign='center'>
-        <Icon name="play" color='pink' size="large" onClick={handlePlay} />
-        <Icon name="ellipsis horizontal" color='teal' size="large" />
+        <Icon name="ellipsis horizontal" circular color='teal' size="large" />
       </Card.Content>
     </Card>
   )
