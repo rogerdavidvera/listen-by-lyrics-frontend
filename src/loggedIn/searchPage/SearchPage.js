@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ApiUrl from '../../assets/ApiUrl'
-import { Dimmer, Loader, Divider } from 'semantic-ui-react'
+import { Dimmer, Loader, Divider, Header, Container } from 'semantic-ui-react'
 import { connect } from 'react-redux'
 
 import SearchForm from './SearchForm'
@@ -35,6 +35,12 @@ class SearchPage extends Component {
     return (
       <>
         <Divider hidden section />
+        <Container text>
+          <Header size='large' textAlign="center">
+            Search by lyrics, artist, song, or album
+          </Header>
+        </Container>
+        <Divider hidden />
         <SearchForm
           handleSearch={this.handleSearch}
           handleInput={this.handleInput} />
