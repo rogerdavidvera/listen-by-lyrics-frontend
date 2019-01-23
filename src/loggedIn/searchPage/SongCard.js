@@ -22,7 +22,13 @@ const SongCard = ({ song, playSong }) => {
         <Card.Meta>{song.artist}</Card.Meta>
       </Card.Content>
       <Card.Content extra textAlign='center'>
-        <SongInfo />
+        <SongInfo
+          name={song.song}
+          artist={song.artist}
+          art={song.album_art}
+          album={song.album}
+          lyrics={song.lyrics}
+        />
       </Card.Content>
     </Card>
   )

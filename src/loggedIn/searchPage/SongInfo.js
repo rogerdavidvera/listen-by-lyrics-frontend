@@ -1,7 +1,8 @@
 import '../../styles/SongInfo.css';
+import SongInfoHeader from './SongInfoHeader'
 
 import React, { Component } from 'react'
-import { Button, Header, Image, Modal, Icon } from 'semantic-ui-react'
+import { Button, Header, Image, Modal, Icon, Divider } from 'semantic-ui-react'
 
 class SongInfo extends Component {
   state = { open: false }
@@ -16,19 +17,13 @@ class SongInfo extends Component {
       <div>
         <Icon name="ellipsis horizontal" circular color='teal' size="large" onClick={this.show(true)}/>
 
-        <Modal size="tiny" dimmer={dimmer} open={open} onClose={this.close}>
-          <Modal.Header textAlign="center">Profile Picture</Modal.Header>
+        <Modal size="small" dimmer={dimmer} open={open} onClose={this.close}>
           <Modal.Content image scrolling>
-            <Image wrapped size='medium' src='https://react.semantic-ui.com/images/wireframe/image.png' />
+            <Image wrapped size='medium' src={this.props.art} />
             <Modal.Description>
-              <Header>Modal Header</Header>
+              <SongInfoHeader className="SongInfoHeader "name={this.props.name} artist={this.props.artist} album={this.props.album} />
+              <Divider />
               <p>This is an example of expanded content that will cause the modal's dimmer to scroll</p>
-              <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
-              <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
-              <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
-              <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
-              <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
-              <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
             </Modal.Description>
           </Modal.Content>
           <Modal.Actions>
