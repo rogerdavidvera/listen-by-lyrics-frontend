@@ -11,7 +11,6 @@ import {
 
 const SongCard = ({ song, playSong }) => {
   const handlePlay = () => {
-    // console.log(song)
     playSong(song)
   }
   return (
@@ -27,7 +26,8 @@ const SongCard = ({ song, playSong }) => {
           artist={song.artist}
           art={song.album_art}
           album={song.album}
-          lyrics={song.lyrics}
+          lyricsArray={song.lyrics.lyrics}
+          handlePlay={handlePlay}
         />
       </Card.Content>
     </Card>
