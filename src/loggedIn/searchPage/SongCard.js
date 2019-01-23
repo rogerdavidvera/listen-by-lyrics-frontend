@@ -16,6 +16,7 @@ const SongCard = ({ song }) => (
       <Divider />
       <Card.Content extra>
       <Icon name="play" color='pink' size="large"/>
+      <Icon name="ellipsis horizontal" color='teal' size="large"/>
      </Card.Content>
     </Card.Content>
   </Card>
