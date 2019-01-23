@@ -8,6 +8,8 @@
   box-shadow: 0 .3rem .3rem rgba(0,0,0,.1) !important;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  position: sticky;
+  top: 0;
 }
 
 .NavbarBrand {
