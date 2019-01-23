@@ -19,3 +19,8 @@
 .ui.modal>.header:not(.ui) {
     text-align: center;
 }
+
+
+.ui[class*="very basic"].table {
+  margin: auto !important
+}
