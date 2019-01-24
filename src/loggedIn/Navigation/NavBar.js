@@ -33,11 +33,6 @@ class NavBar extends React.Component {
           <Collapse className="capse" isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="NavLink" href="#">
-                <Link className="NavLink" to="/">Search</Link>
-                </NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink className="NavLink" target="_blank" href={this.props.spotify_url}>Spotify Web Player</NavLink>
               </NavItem>
               <NavItem>
