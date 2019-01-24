@@ -37,7 +37,7 @@ class SearchPage extends Component {
         <Divider hidden section />
         <Container text>
           <Header size='large' textAlign="center">
-            Search by lyrics, artist, song, or album
+            Search by lyrics, song, or artist
           </Header>
         </Container>
         <Divider hidden />
