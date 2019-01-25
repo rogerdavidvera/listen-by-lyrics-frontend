@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { fetchAuthorization } from '../actions/AuthActions';
 // import API_URL from '../assets/ApiUrl'
-class RedirectPage extends Component {
+class RedirectPage extends React.Component {
   componentDidMount() {
     // Save query from URL
     const queryString = this.props.location.search

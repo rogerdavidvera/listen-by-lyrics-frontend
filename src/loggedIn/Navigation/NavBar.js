@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/AuthActions';
-import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,

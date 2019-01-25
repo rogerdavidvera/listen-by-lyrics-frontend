@@ -2,7 +2,7 @@ import '../styles/SongInfo.css';
 import SongInfoHeader from './SongInfoHeader'
 import SongLyrics from './SongLyrics'
 import React, { Component } from 'react'
-import { Button, Header, Image, Modal, Icon, Divider } from 'semantic-ui-react'
+import { Button, Image, Modal, Icon, Divider } from 'semantic-ui-react'
 
 class SongInfo extends Component {
   state = { open: false }
