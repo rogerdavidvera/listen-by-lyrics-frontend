@@ -13,6 +13,7 @@
 ### Built With 🏠
 
 - Bootstrapped with [create-react-app](https://github.com/facebook/create-react-app)
+- React-Redux to manage application state
 
 ### Styling 💅🏾
 
