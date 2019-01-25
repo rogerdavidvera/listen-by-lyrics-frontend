@@ -38,6 +38,9 @@ class NavBar extends React.Component {
                 <NavLink className="NavLink" target="_blank" href={this.props.spotify_url}>Spotify Web Player</NavLink>
               </NavItem>
               <NavItem>
+                <NavLink className="NavLink" href={'/help'}>Help</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink className="NavLink" href="#" onClick={this.props.logoutUser}>Sign Out</NavLink>
               </NavItem>
             </Nav>
