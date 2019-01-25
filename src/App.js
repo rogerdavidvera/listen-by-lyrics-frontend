@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import { connect } from 'react-redux'
 
 import WelcomePrompt from './signedOut/WelcomePrompt'
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <>
       <Route exact path='/authorized' component={RedirectPage} />
-      <Route exact path='/' render={(props) => {
+      <Route path='/' render={(props) => {
         return this.props.auth.isLoggedIn ?
           <Dashboard />
           :

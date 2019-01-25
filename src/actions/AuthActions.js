@@ -1,5 +1,5 @@
 import API_URL from '../assets/ApiUrl'
-import { headers} from '../assets/AuthorizationHeaders'
+import { headers } from '../assets/AuthorizationHeaders'
 import { UPDATE_AUTHORIZATION, LOGOUT_USER } from '../assets/ActionTypes'
 
 export function fetchAuthorization(code) {
