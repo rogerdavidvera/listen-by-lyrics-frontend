@@ -22,7 +22,7 @@ class SearchForm extends Component {
         <Grid.Column width={10}>
           <Form onSubmit={(e) => this.props.handleSearch(e, this.state.query)}>
             <Form.Field>
-              <Input size='big' icon='search' placeholder='Search for songs' onChange={e => this.handleInput(e.target.value)} />
+              <Input size='big' icon='search' placeholder='Search' onChange={e => this.handleInput(e.target.value)} />
             </Form.Field>
           </Form>
         </Grid.Column>
