@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 README.old.md
+
+/src/assets/ApiUrl.js
