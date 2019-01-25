@@ -35,6 +35,7 @@ class SongInfo extends Component {
               content='Play'
               />
             <Button
+              onClick={this.props.handleSave}
               primary
               labelPosition='right'
               icon='heart'
