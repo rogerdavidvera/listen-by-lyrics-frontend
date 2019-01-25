@@ -27,7 +27,7 @@ const HelpPage = () => (
               <List.Header>I have Premium and still can't hear.</List.Header>
               <List.Description>
               <br/>
-              <strong>Desktop User</strong>: We recommended you have Spotify downloaded and running on your computer. If you're on a desktop and don't have the Spotify app downloaded, you can click "Spotify Web Player" from the ListenByLyrics menu bar and play any song to get the player started. <br/><br/>
+              <strong>Desktop User</strong>: We recommended you have Spotify downloaded and running on your computer. If you're on a desktop and don't have the Spotify app downloaded, you can click "Spotify Player" from the ListenByLyrics menu bar and play any song to get the player started. <br/><br/>
               <strong>Phone User</strong>: You need the Spotify app from the Google Play or Apple store downloaded on your phone.
               <br/>
               </List.Description>
