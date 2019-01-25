@@ -21,7 +21,7 @@ const MainPage = ({ user }) => (
         <Image src='https://i.imgur.com/kIcfwkT.png' alt='Blank Profile Image' rounded centered/>
        }
       <Divider hidden />
-      <Button as='a' href='/search' color='teal'>Start Searching</Button>
+      <Button as='a' href='/search' size='big' color='pink'>Start</Button>
     </Segment>
   </Container>
 )

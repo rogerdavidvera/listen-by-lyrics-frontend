@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import '../styles/WelcomePrompt.css';
 import { Jumbotron } from 'reactstrap';
 import LoginButton from './LoginButton';
+import MadeWithLove from './MadeWithLove'
 import { withRouter } from "react-router";
 
 function WelcomePrompt({ isLoggedIn, history, loggingIn }) {
@@ -10,7 +11,7 @@ function WelcomePrompt({ isLoggedIn, history, loggingIn }) {
     if (!isLoggedIn) {
       history.push('/')
     }
-  });
+  }, []);
 
   return (
   <div className="homepage">
@@ -24,6 +25,7 @@ function WelcomePrompt({ isLoggedIn, history, loggingIn }) {
       <p className="lead">
         <LoginButton />
       </p>
+      <MadeWithLove />
     </div>
   </Jumbotron>
   :
