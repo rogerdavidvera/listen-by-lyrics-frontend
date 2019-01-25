@@ -1,12 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import { playSong } from '../actions/PlaybackActions'
 import SongInfo from './SongInfo'
 import {
   Card,
-  Icon,
-  Image,
-  Divider
+  Image
 } from 'semantic-ui-react'
 
 const SongCard = ({ song, playSong }) => {
