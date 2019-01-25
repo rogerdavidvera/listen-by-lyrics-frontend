@@ -42,7 +42,7 @@ class SongInfo extends Component {
               />
             <Button
               negative
-              icon='window close'
+              icon='x'
               labelPosition='right'
               content="Close"
               onClick={this.close}
