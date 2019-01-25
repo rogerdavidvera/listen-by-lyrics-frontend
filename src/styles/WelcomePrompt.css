@@ -8,6 +8,18 @@ body {
   animation: Gradient 12s ease infinite !important; */
 }
 
+.name {
+  color: #FAFAD2;
+}
+
+.name:hover {
+  color: #FAFAD2;
+}
+
+.emoji {
+  padding-left: 1%;
+}
+
 .homepage {
   text-align: center;
   color: #eee;
