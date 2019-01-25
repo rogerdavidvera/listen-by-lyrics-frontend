@@ -1,11 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux'
 import '../styles/WelcomePrompt.css';
 import { Jumbotron } from 'reactstrap';
 import LoginButton from './LoginButton';
 
-const WelcomePrompt = ({ rehydrated }) => {
-  console.log(rehydrated)
+const WelcomePrompt = () => {
   return (
   <div className="homepage">
   <Jumbotron>
@@ -23,10 +21,4 @@ const WelcomePrompt = ({ rehydrated }) => {
   )
 }
 
-const mapStateToProps = (state) => {
-  return {
-    rehydrated: state._persist.rehydrated
-  }
-}
-
-export default connect(mapStateToProps)(WelcomePrompt)
+export default WelcomePrompt
