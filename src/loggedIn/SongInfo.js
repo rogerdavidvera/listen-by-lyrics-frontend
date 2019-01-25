@@ -35,6 +35,12 @@ class SongInfo extends Component {
               content='Play'
               />
             <Button
+              primary
+              labelPosition='right'
+              icon='heart'
+              content='Save'
+              />
+            <Button
               negative
               icon='window close'
               labelPosition='right'
