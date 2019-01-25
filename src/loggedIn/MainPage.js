@@ -15,7 +15,11 @@ const MainPage = ({ user }) => (
     <Divider hidden section />
     <Segment raised className="Segment">
       <Header content={`Hello, ${user.display_name}!`} className="Header" />
-      <Image src={user.img_url} alt={user.display_name + 's profile image'} rounded centered/>
+      {user.img_url ?
+        <Image src={user.img_url} alt={user.display_name + 's profile image'} rounded centered/>
+        :
+        <Image src='https://i.imgur.com/kIcfwkT.png' alt='Blank Profile Image' rounded centered/>
+       }
       <Divider hidden />
       <Button as='a' href='/search' color='teal'>Start Searching</Button>
     </Segment>
