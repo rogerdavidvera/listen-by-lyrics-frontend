@@ -25,12 +25,15 @@ class NavBar extends React.Component {
   render() {
     return (
         <Navbar fixed="top" dark expand="md" className="navBar">
-          <NavbarBrand className="NavbarBrand" href="#">
+          <NavbarBrand className="NavbarBrand" href="/">
             ListenByLyrics
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse className="capse" isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink className="NavLink" href={'/search'}>Search</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink className="NavLink" target="_blank" href={this.props.spotify_url}>Spotify Web Player</NavLink>
               </NavItem>
