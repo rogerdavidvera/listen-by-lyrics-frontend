@@ -1,11 +1,17 @@
-import React from 'react';
-import { connect } from 'react-redux'
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 import '../styles/WelcomePrompt.css';
 import { Jumbotron } from 'reactstrap';
 import LoginButton from './LoginButton';
+import { withRouter } from "react-router";
 
-const WelcomePrompt = ({ rehydrated }) => {
-  console.log(rehydrated)
+function WelcomePrompt({ isLoggedIn, history }) {
+  useEffect(() => {
+    if (!isLoggedIn) {
+      history.push('/')
+    }
+  });
+
   return (
   <div className="homepage">
   <Jumbotron>
@@ -25,8 +31,8 @@ const WelcomePrompt = ({ rehydrated }) => {
 
 const mapStateToProps = (state) => {
   return {
-    rehydrated: state._persist.rehydrated
+    isLoggedIn: state.auth.isLoggedIn
   }
 }
 
-export default connect(mapStateToProps)(WelcomePrompt)
+export default withRouter(connect(mapStateToProps)(WelcomePrompt))

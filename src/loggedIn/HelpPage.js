@@ -11,7 +11,7 @@ const HelpPage = () => (
       <List.Content>
         <List.Header>Play button not working?</List.Header>
         <List size="tiny">
-          <List.Item as='a'>
+          <List.Item as='div'>
             <Icon name='right triangle' />
             <List.Content>
               <List.Header>I do not have a Spotify Premium account.</List.Header>
@@ -21,7 +21,7 @@ const HelpPage = () => (
               <br/>
             </List.Content>
           </List.Item>
-          <List.Item as='a'>
+          <List.Item as='div'>
             <Icon name='right triangle' />
             <List.Content>
               <List.Header>I have Premium and still can't hear.</List.Header>
@@ -46,7 +46,7 @@ const HelpPage = () => (
       </List.Content>
     </List.Item>
     <Divider />
-    <List.Item as='a'>
+    <List.Item as='div'>
       <Icon name='heart' />
       <List.Content>
         <List.Header>Thank You!</List.Header>
