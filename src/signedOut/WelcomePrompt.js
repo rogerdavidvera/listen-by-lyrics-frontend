@@ -11,7 +11,7 @@ function WelcomePrompt({ isLoggedIn, history, loggingIn }) {
     if (!isLoggedIn) {
       history.push('/')
     }
-  });
+  }, []);
 
   return (
   <div className="homepage">
