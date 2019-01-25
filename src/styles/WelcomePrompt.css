@@ -10,7 +10,7 @@ body {
 .MadeWithLove {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 .name {
   color: #FFD700;
@@ -22,7 +22,7 @@ body {
 
 .emoji {
   padding-left: 0.4%;
-  padding-right: 0.1%;
+  padding-right: 0.2%;
 }
 
 .homepage {
