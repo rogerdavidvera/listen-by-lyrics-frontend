@@ -51,10 +51,10 @@ const HelpPage = () => (
       <List.Content>
         <List.Header>Thank You!</List.Header>
         <br />
-        <List.Description>ListenByLyrics is still in a public alpha release phase. Stay tuned for updates.
+        <List.Description>ListenByLyrics is still being developed. Stay tuned for updates.
         </List.Description>
         <br />
-        <List.Description><strong>Questions?</strong> Email Roger Vera at <a href="mailto:help@listenbylyrics.com">help@listenbylyrics.com</a>
+        <List.Description><strong>Questions?</strong> Email Roger Vera at <a href="mailto:help@listenbylyrics.com">info@listenbylyrics.com</a>
         </List.Description>
       </List.Content>
     </List.Item>

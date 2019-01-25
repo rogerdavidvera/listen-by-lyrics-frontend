@@ -5,7 +5,7 @@ import API_URL from '../assets/ApiUrl'
 
 const LoginButton = () => (
   <a href={`${API_URL}login`}>
-    <Button outline color="light">Log in with Spotify to start</Button>
+    <Button outline color="light">Log in with Spotify Premium to start</Button>
   </a>
 )
 
