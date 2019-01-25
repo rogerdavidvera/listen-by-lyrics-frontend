@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <>
       <Route exact path='/authorized' component={RedirectPage} />
-      <Route exact path='/' render={(props) => {
+      <Route path='/' render={(props) => {
         return this.props.auth.isLoggedIn ?
           <Dashboard />
           :
