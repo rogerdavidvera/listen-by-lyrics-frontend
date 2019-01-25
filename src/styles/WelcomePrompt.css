@@ -7,6 +7,23 @@ body {
   -moz-animation: Gradient 12s ease infinite !important;
   animation: Gradient 12s ease infinite !important; */
 }
+.MadeWithLove {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.name {
+  color: #FFD700;
+}
+
+.name:hover {
+  color: #DAA520;
+}
+
+.emoji {
+  padding-left: 0.4%;
+  padding-right: 0.2%;
+}
 
 .homepage {
   text-align: center;
