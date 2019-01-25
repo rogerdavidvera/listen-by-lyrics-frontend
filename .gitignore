@@ -24,4 +24,4 @@ yarn-error.log*
 
 README.old.md
 
-/src/assets/ApiUrl.js
+/src/**/ApiUrl.js
