@@ -1,6 +1,6 @@
 import API_URL from '../assets/ApiUrl'
 import { headers } from '../assets/AuthorizationHeaders'
-import { UPDATE_AUTHORIZATION, LOGOUT_USER } from '../assets/ActionTypes'
+import { UPDATE_AUTHORIZATION, LOGOUT_USER, LOGGING_IN } from '../assets/ActionTypes'
 
 export function fetchAuthorization(code) {
   return (dispatch) => {
@@ -19,6 +19,10 @@ export function fetchAuthorization(code) {
       })
     })
   }
+}
+
+export function loggingIn(){
+  return {type: LOGGING_IN}
 }
 
 export function logoutUser(){

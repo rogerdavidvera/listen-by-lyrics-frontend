@@ -5,7 +5,7 @@ import { Jumbotron } from 'reactstrap';
 import LoginButton from './LoginButton';
 import { withRouter } from "react-router";
 
-function WelcomePrompt({ isLoggedIn, history }) {
+function WelcomePrompt({ isLoggedIn, history, loggingIn }) {
   useEffect(() => {
     if (!isLoggedIn) {
       history.push('/')
@@ -14,6 +14,7 @@ function WelcomePrompt({ isLoggedIn, history }) {
 
   return (
   <div className="homepage">
+  {!loggingIn ?
   <Jumbotron>
     <div className="welcomeContent">
       <h1 className="title">ListenByLyrics</h1>
@@ -25,13 +26,17 @@ function WelcomePrompt({ isLoggedIn, history }) {
       </p>
     </div>
   </Jumbotron>
+  :
+  <></>
+  }
   </div>
   )
 }
 
 const mapStateToProps = (state) => {
   return {
-    isLoggedIn: state.auth.isLoggedIn
+    isLoggedIn: state.auth.isLoggedIn,
+    loggingIn: state.auth.loggingIn
   }
 }
 
