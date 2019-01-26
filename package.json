@@ -2,6 +2,10 @@
   "name": "listen-by-lyrics-front-end",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "3.10.10",
+    "node": "6.11.2"
+  },
   "dependencies": {
     "bootstrap": "^4.2.1",
     "react": "^16.8.0-alpha.1",
