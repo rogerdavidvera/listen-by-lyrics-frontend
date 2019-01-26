@@ -11,7 +11,7 @@ import {
   NavLink,
 } from 'reactstrap';
 
-import '../../styles/NavBar.css';
+import '../styles/NavBar.css';
 
 class NavBar extends React.Component {
   state = {isOpen: false};
