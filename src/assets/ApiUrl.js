@@ -1,1 +1,1 @@
-export default "http://192.168.1.241:4000/api/v1/"
+export default "https://listen-by-lyrics-api.herokuapp.com/"
