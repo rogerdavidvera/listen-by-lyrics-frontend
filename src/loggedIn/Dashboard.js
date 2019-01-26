@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
-import NavBar from './navigation/NavBar'
+import NavBar from './NavBar'
 import MainPage from './MainPage'
 import SearchPage from './searchPage/SearchPage'
 import HelpPage from './HelpPage'
