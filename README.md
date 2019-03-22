@@ -9,6 +9,8 @@
 - Built with responsive design in mind for a mobile-friendly experience
 
 ## Tech Stack 🥞
+- React Frontend
+- Rails Backend
 
 ### Built With 🏠
 
