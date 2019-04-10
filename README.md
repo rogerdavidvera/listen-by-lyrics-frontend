@@ -19,7 +19,6 @@
 
 ### Styling 💅🏾
 
-- ReactStrap
 - SemanticUIReact
 
 ## Contributing 🤜🏾🤛🏾
